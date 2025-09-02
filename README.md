@@ -1,2 +1,2 @@
 # eqly_privacy_policy
-eqly privacy policy 
+privacy policy and terms of conditions for eqly.in

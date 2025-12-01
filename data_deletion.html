@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delete account — Eqly</title>
+  <style>
+    body{font-family:Arial,system-ui;max-width:720px;margin:40px auto;padding:16px}
+    h1{font-size:22px}
+    .box{border:1px solid #eee;padding:18px;border-radius:8px}
+    label{display:block;margin-top:12px;font-weight:600}
+    input,textarea{width:100%;padding:8px;margin-top:6px;border:1px solid #ddd;border-radius:6px}
+    button{margin-top:12px;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h1>Request account deletion</h1>
+  <div class="box">
+    <p>If you want to delete your Eqly account and all associated data, choose one of the options below.</p>
+
+    <h3>Option 1 — Self request by email</h3>
+    <p>Send an email to <a href="mailto:team@eqly.in?subject=Delete%20my%20Eqly%20account">support@yourdomain.com</a> with your registered email and user id (if known). We will respond within 7 business days.</p>
+
+    <h3>Option 2 — Submit a request (recommended)</h3>
+    <form action="https://eqly.in/api/delete-request" method="post">
+      <label>Registered email</label>
+      <input name="email" type="email" required />
+      <label>Username or user id (optional)</label>
+      <input name="userId" type="text" />
+      <label>Reason (optional)</label>
+      <textarea name="reason"></textarea>
+      <button type="submit">Submit deletion request</button>
+    </form>
+
+    <p style="margin-top:12px;font-size:13px;color:#666">
+      We will verify the request and send a confirmation once deletion is complete. For security we may ask you to confirm via the registered email address. Read our <a href="/privacy">Privacy Policy</a> for more details.
+    </p>
+  </div>
+</body>
+</html>
